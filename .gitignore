@@ -1,0 +1,23 @@
+# OS関連
+.DS_Store
+Thumbs.db
+
+# node.js関連（使っていれば）
+node_modules/
+npm-debug.log*
+
+# ビルド・一時ファイル
+dist/
+build/
+*.log
+*.tmp
+
+# IDE関連
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 環境変数など
+.env
+.env.local

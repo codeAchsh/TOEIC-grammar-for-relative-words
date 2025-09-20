@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEIC関係代名詞学習</title>
+
+  <!-- ページの説明 -->
+  <meta name="description" content="Learn relative words and their grammatical roles in a calm, intuitive space. / 英語の関係詞、関係代名詞、関係副詞、複合関係詞を、穏やかで感覚的に学べる空間です。" />
+
+  <!-- SEO関連 -->
+  <meta name="keywords" content="relative words, TOEIC, grammar, parts of speech, intuitive learning, calm design, TOEIC対策, 関係詞, 関係代名詞, 関係副詞, 複合関係詞, 文法, 穏やかな学習" />
+
+  <!-- SNS表示（OpenGraph） -->
+  <meta property="og:title" content="TOEIC Grammar: Learn relative words / TOEIC関係詞を学ぶ-関係代名詞に注目" />
+  <meta property="og:description" content="Explore relative words and their grammatical roles through a gentle, focused interface. / 穏やかで集中しやすい画面で、関係詞、関係代名詞、関係副詞、複合関係詞を学べます。" />
+  <meta property="og:image" content="https://github.com/codeAchsh/TOEIC-grammar-for-relative-words
+/blob/main/images/TOEIC-thumbnail.png" />
+  <meta property="og:url" content="https://codeachsh.github.io/TOEIC-grammar-for-relative-words
+/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="shortcut icon" href="imagaes/icon.ico" />
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P16Z7PRNNF');
+  </script> -->
+
+</head>
+<body>
+  <h1>TOEIC -関係詞を学ぶ：関係代名詞・関係副詞・複合関係詞-</h1>
+
+  <div class="info-box">
+      <h2>関係詞の種類と使い方</h2>
+      <ul>
+        <li><strong>who</strong>：人を先行詞とする主格</li>
+        <li><strong>whom</strong>：人を先行詞とする目的格</li>
+        <li><strong>whose</strong>：所有を表す関係詞</li>
+        <li><strong>which</strong>：物・動物を先行詞とする主格/目的格</li>
+        <li><strong>that</strong>：人・物どちらにも使える万能型</li>
+      </ul>
+  </div>
+
+  <div class="button-group">
+    <h3>関係代名詞</h3>
+      <div class="button-group group-noun">
+        <button onclick="showWords('who')">who</button>
+        <button onclick="showWords('whom')">whom</button>
+        <button onclick="showWords('whose')">whose</button>
+        <button onclick="showWords('which')">which</button>
+        <button onclick="showWords('that')">that</button>
+      </div>
+
+      <h3>関係副詞</h3>
+      <div class="button-group group-adverb">
+        <button onclick="showWords('when')">when</button>
+        <button onclick="showWords('where')">where</button>
+        <button onclick="showWords('why')">why</button>
+      </div>
+
+      <h3>複合関係詞</h3>
+      <div class="button-group group-complex">
+        <button onclick="showWords('whoever')">whoever</button>
+        <button onclick="showWords('whatever')">whatever</button>
+        <button onclick="showWords('whichever')">whichever</button>
+      </div>
+  </div>
+
+  <div id="word-list" class="word-list">
+     <div id="example-area"><p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</p></div>
+  </div>
+
+  <div class="toeic-top">
+    <a href="https://codeachsh.github.io/TOEIC-GrammarTools/" class="top-button">TOEIC文法ツールへ戻る</a>
+  </div>  
+
+
+  <footer>
+    <div class="ad-template-link">
+      <p>🧁 Links to our works</p>
+      <div>
+        <a href="https://codeachsh.github.io/All-template-Japanese-/" target="_blank">
+          📦 Click here for a list of useful templates.！
+        </a>
+      </div>
+      <div>
+        <a href="https://note.com/chill_2525" target="_blank" class="note-link">
+          ✨ Blogs, templates, and growth records are being compiled and published. → note.com/chill_2525
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2025 Chill_2525 | code.achsh@gmail.com</p>
+  </footer>
+
+  <!-- Consent Banner -->
+  <div id="consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:#f8f8f8;padding:1em;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);z-index:9999;">
+    このサイトは分析のためにCookieを使用します。<button onclick="acceptConsent()">同意する</button>
+  </div>
+
+  <script>
+    function acceptConsent() {
+      localStorage.setItem('gentleConsent', 'true');
+      document.getElementById('consent-banner').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('gentleConsent');
+      if (consent === 'true') {
+        document.getElementById('consent-banner').style.display = 'none';
+        loadGoogleAnalytics();
+      }
+    });
+  </script>
+
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>
