@@ -37,45 +37,61 @@
 <body>
   <h1>TOEIC -関係詞を学ぶ：関係代名詞・関係副詞・複合関係詞-</h1>
 
-  <div class="info-box">
-      <h2>関係詞の種類と使い方</h2>
-      <ul>
-        <li><strong>who</strong>：人を先行詞とする主格</li>
-        <li><strong>whom</strong>：人を先行詞とする目的格</li>
-        <li><strong>whose</strong>：所有を表す関係詞</li>
-        <li><strong>which</strong>：物・動物を先行詞とする主格/目的格</li>
-        <li><strong>that</strong>：人・物どちらにも使える万能型</li>
-      </ul>
+<!-- 関係代名詞セクション -->
+<div class="info-box noun-box">
+  <h2>関係代名詞の種類と使い方</h2>
+  <ul>
+    <li><strong>who</strong>：人を先行詞とする主格</li>
+    <li><strong>whom</strong>：人を先行詞とする目的格</li>
+    <li><strong>whose</strong>：所有を表す関係詞</li>
+    <li><strong>which</strong>：物・動物を先行詞とする主格/目的格</li>
+    <li><strong>that</strong>：人・物どちらにも使える万能型</li>
+  </ul>
+  <div class="button-group group-noun">
+    <button onclick="showWords('who')">who</button>
+    <button onclick="showWords('whom')">whom</button>
+    <button onclick="showWords('whose')">whose</button>
+    <button onclick="showWords('which')">which</button>
+    <button onclick="showWords('that')">that</button>
   </div>
+  <div id="example-noun" class="word-list"><p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</div>
+</div>
 
-  <div class="button-group">
-    <h3>関係代名詞</h3>
-      <div class="button-group group-noun">
-        <button onclick="showWords('who')">who</button>
-        <button onclick="showWords('whom')">whom</button>
-        <button onclick="showWords('whose')">whose</button>
-        <button onclick="showWords('which')">which</button>
-        <button onclick="showWords('that')">that</button>
-      </div>
-
-      <h3>関係副詞</h3>
-      <div class="button-group group-adverb">
-        <button onclick="showWords('when')">when</button>
-        <button onclick="showWords('where')">where</button>
-        <button onclick="showWords('why')">why</button>
-      </div>
-
-      <h3>複合関係詞</h3>
-      <div class="button-group group-complex">
-        <button onclick="showWords('whoever')">whoever</button>
-        <button onclick="showWords('whatever')">whatever</button>
-        <button onclick="showWords('whichever')">whichever</button>
-      </div>
+<!-- 関係副詞セクション -->
+<div class="info-box adverb-box">
+  <h2>関係副詞の種類と使い方</h2>
+  <ul>
+    <li><strong>when</strong>：時間を表す副詞節を導く</li>
+    <li><strong>where</strong>：場所を表す副詞節を導く</li>
+    <li><strong>why</strong>：理由を表す副詞節を導く</li>
+  </ul>
+  <div class="button-group group-adverb">
+    <button onclick="showWords('when')">when</button>
+    <button onclick="showWords('where')">where</button>
+    <button onclick="showWords('why')">why</button>
   </div>
+  <div id="example-adverb" class="word-list"><p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</div>
+</div>
 
-  <div id="word-list" class="word-list">
+<!-- 複合関係詞セクション -->
+<div class="info-box complex-box">
+  <h2>複合関係詞の種類と使い方</h2>
+  <ul>
+    <li><strong>whoever</strong>：〜する人は誰でも</li>
+    <li><strong>whatever</strong>：〜するものは何でも</li>
+    <li><strong>whichever</strong>：どちらでも</li>
+  </ul>
+  <div class="button-group group-complex">
+    <button onclick="showWords('whoever')">whoever</button>
+    <button onclick="showWords('whatever')">whatever</button>
+    <button onclick="showWords('whichever')">whichever</button>
+  </div>
+  <div id="example-complex" class="word-list"><p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</div>
+</div>
+
+  <!-- <div id="word-list" class="word-list">
      <div id="example-area"><p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</p></div>
-  </div>
+  </div> -->
 
   <div class="toeic-top">
     <a href="https://codeachsh.github.io/TOEIC-GrammarTools/" class="top-button">TOEIC文法ツールへ戻る</a>
