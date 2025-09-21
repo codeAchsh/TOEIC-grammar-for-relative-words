@@ -104,6 +104,7 @@ button {
   padding: 15px;
   border-radius: 5px;
   margin: 0 auto;
+  width: 100%;
   max-width: 600px;
   text-align: left;
 }
@@ -167,6 +168,9 @@ footer {
 
 /* モバイル対応 */
 @media screen and (max-width: 480px) {
+  *{
+    box-sizing: border-box;
+  }
   body {
     padding: 10px;
   }
@@ -196,8 +200,16 @@ footer {
     width: 100%;
     max-width: 100%;
   }
+  .group-noun button,
+  .group-adverb button,
+  .group-complex button{
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;    
+  }
   .word-list #example-area {
     margin-left: 0;
+    margin-right: 0;
   }
   .example {
     font-size: 0.9em;
